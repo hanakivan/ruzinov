@@ -1,0 +1,93 @@
+.wrapper {
+	width:1040px; /*no max-width :(*/
+}
+
+#site-header {
+	width:1080px;
+}
+
+.clearfix {
+    zoom:1;
+}
+
+/*make this elements inline block*/
+input,
+select,
+textarea {
+	display:inline;
+	zoom:1;
+}
+
+/*lesser height due to not supporting box-sizing*/
+#search-input {
+	height:43px;
+}
+
+/*it is a positioning bug*/
+#search-submit {
+	position:relative;
+	top:1px;
+}
+
+/*does not show a proper cursor*/
+#site-logo-anchor {
+	cursor:pointer;
+}
+
+#site-logo-anchor:hover {
+	text-decoration:none;
+}
+
+#share-buttons {
+	top:-10px;
+}
+
+/**
+ * Inheritance replaced by expressions
+ */
+a {
+	font:expression(this.parentNode.currentStyle['font']);
+}
+
+#featured-navigation *,
+b, strong, i, em, .italic {
+	color:expression(this.parentNode.currentStyle['color']);
+}
+
+#featured-navigation .submenu {
+	background-color:expression(this.parentNode.currentStyle['backgroundColor']);
+	padding-bottom:23px;
+}
+
+#featured-navigation .submenu-cols-3-4 .submenu-item.odd {
+	width:32%;
+}
+
+/*no rgba suport*/
+.slide-caption {
+	background-color:#302f2f;
+}
+
+#featured-contact-form fieldset {
+	margin:0 15px 15px;
+}
+
+
+#featured-contact-form-message {
+	width:88%;
+	position:relative;
+	left:-12px;
+}
+
+/*no ::before pseudo element*/
+.bullet-links li {
+	list-style:inside disc;
+	word-wrap:break-word;
+	margin-left:1em;
+	text-indent:-15px;
+}
+
+.article-list h3,
+.article-list h4 {
+	font-size:1em;
+}

@@ -482,7 +482,7 @@ label {
 }
 
 /*temporary way of showing navigation*/
-.nav-item:hover .submenu {
+.no-js  .nav-item:hover .submenu {
 	display:block!important;
 }
 

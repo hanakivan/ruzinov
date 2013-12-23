@@ -1,4 +1,9 @@
 jQuery(document).ready(function($){
+
+	/**
+	 * Content important class
+	 */
+	$('body').removeClass('no-js');
 	
 	/**
 	 * Show slider navigation
@@ -56,4 +61,19 @@ jQuery(document).ready(function($){
 		e.preventDefault();
 		window.open($(this).attr("href"),'','width=600,height=300,left=200,top=200');
 	});
+	
+	/**
+	 * Jquery animations of navigation
+	 */
+	 var submenu;
+	 $('.nav-item').hover(function(){
+		submenu = $('.submenu', $(this));
+		
+		submenu.slideDown();
+		
+	 }, function(){
+		submenu = $('.submenu', $(this));
+		
+		submenu.fadeOut();
+	 });
 });
